@@ -1,0 +1,9 @@
+#Value NAME ([\w \/]+)
+#Value DESCR ([\w -\/.]+)
+Value PID ((\w+(-\w+(-\w+)?)?))
+Value SN (\S+)
+
+
+Start
+  #^NAME: "${NAME}", DESCR: "${DESCR}"
+  ^PID: ${PID}.*SN: ${SN} -> Record

@@ -1,0 +1,9 @@
+Value SERIAL_NO (\S+)
+Value PART_NO (\d+-\d+-\d+)
+Value PID (\w+(-\w+(-\w+)?)?)
+
+
+Start
+  ^\s+Product Identifier \(PID\)\s+:\s+${PID}
+  ^\s+PCB Serial Number\s+:\s+${SERIAL_NO}
+  ^\s+Top Assy. Part Number\s+:\s+${PART_NO} -> Record
