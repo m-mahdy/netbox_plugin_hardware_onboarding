@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "netbox-hardware-onboarding"
+version = "0.1.0"
+description = "Adds the hardware parts of a router to an already existing device in netbox"
+authors = ["Mohab Mahdy"]
+license = "Apache-2.0"
+packages = [
+    { include = "netbox_hardware_onboarding" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.0"
+black = "^20.8b1"
+invoke = "^1.5.0"
+pylint = "^2.7.2"
+pylint-django = "^2.4.2"
+pydocstyle = "^5.1.1"
+yamllint = "^1.26.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

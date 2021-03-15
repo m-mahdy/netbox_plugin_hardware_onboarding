@@ -1,0 +1,7 @@
+Value PART_NO (\d+-\d+) 
+Value SERIAL_NO (\w+)
+Value DESCR ([\w -\/]+)
+
+
+Start
+  ^\s*[\w ]+\s${PART_NO}\s+${SERIAL_NO}\s+${DESCR} -> Record
